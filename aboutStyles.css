@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Indie+Flower&family=Rock+3D&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}      
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    display: flex;
+    position: absolute;
+    color: #000;
+    z-index: 105;
+    font-size: 24vh;
+    margin : 20vh;
+    text-align: center;
+    -webkit-animation: name 2s ease-in-out infinite alternate;
+    -moz-animation: name 2s ease-in-out infinite alternate;
+    animation: name 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes name {
+from {}
+to {text-shadow: 0 0 10px #6a9552, 0 0 15px #9ccccc, 0 0 20px #6a9552; }
+}
+
+.loader.hidden {
+animation: fadeOut 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+#cnv {
+    background-color: rgb(71, 68, 68);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+}  
+
+.navbar{
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    font-family: 'Abel', sans-serif;
+    background-color: #6a9552;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    -webkit-animation: logo 2s ease-in-out infinite alternate;
+}
+
+#navbar__logo:hover {
+    background-color: #6a9552;
+}
+
+@-webkit-keyframes logo {
+    from {}
+    to {text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; }
+    } 
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover{
+    color: #6a9552;
+}
+
+.butterfly1 {
+    transform: scale(0.5);
+    top: 100%;
+    left: 100%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly1Animation 35s infinite;
+}
+
+.butterfly2 {
+    transform: scale(0.5);
+    top: 0%;
+    left: -10%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly2Animation 15s infinite;
+}
+
+.butterfly3 {
+    transform: scale(0.5);
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    z-index: 6;
+    animation: butterfly3Animation 12s infinite;
+}
+
+.butterfly4 {
+    transform: scale(0.18);
+    top: 0%;
+    left: 85%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly4Animation 23s infinite;
+}
+
+.butterfly5 {
+    transform: scale(0.2);
+    top: 0%;
+    left: -10%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly7Animation 13s infinite;
+}
+
+.butterfly6 {
+    transform: scale(0.3);
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    z-index: 6;
+    animation: butterfly6Animation 16s infinite;
+}
+
+.butterfly7 {
+    transform: scale(0.22);
+    top: 0%;
+    left: 85%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly5Animation 28s infinite;
+}
+
+.butterfly8 {
+    top: 0%;
+    left: 85%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly7Animation 16s infinite;
+}
+
+.butterfly9 {
+    transform: scaleX(-1);
+    top: 0%;
+    left: 85%;
+    position: absolute;
+    z-index: 5;
+    animation: butterfly3Animation 25s infinite;
+}
+
+@keyframes butterfly1Animation {
+    0%{top: 70%; left: 85%;}
+    30% {top:70%; left: 60%;}
+    60%{top: 65%; left: 48%;}
+    75%{top: 60%; left: 30%;}
+    100% {top: 40%; left: -15%;}
+}
+
+@keyframes butterfly2Animation {
+    0%{top: 20%; left: -15%;}
+    30% {top:25%; left: 30%;}
+    60%{top: 32%; left: 60%;}
+    75%{top: 29%; left: 75%;}
+    100% {top: 30%; left: 80%;}
+}
+
+@keyframes butterfly3Animation {
+    0%{top: 60%; left:-15%;}
+    30% {top:30%; left: 5%;}
+    60%{top: 20%; left: 10%;}
+    75%{top: 0%; left: 15%;}
+    100% {top: -40%; left: 20;}
+}
+
+@keyframes butterfly4Animation {
+    0%{top: -60%; left:70%;}
+    30% {top:-40%; left:30%;}
+    60%{top: -45%; left: 0%;}
+    75%{top: -40%; left: -30%;}
+    100% {top: -48%; left: -60%;}
+}
+
+@keyframes butterfly6Animation {
+    0%{top: 70%; left:-30%;}
+    30% {top:20%; left: 20%;}
+    60%{top: 30%; left: 40%;}
+    75%{top:0%; left: 60%;}
+    100% {top:-30%; left: 90;}
+}
+
+@keyframes butterfly5Animation {
+    0%{top: 70%; left:-30%;}
+    30% {top:20%; left:40%;}
+    60%{top: 50%; left: 80%;}
+    75%{top:0%; left: 90%;}
+    100% {top:-30%; left: 97;}
+}
+
+@keyframes butterfly7Animation {
+    0%{top: 70%; left:90%;}
+    30% {top:20%; left: 60%;}
+    60%{top: 50%; left: 30%;}
+    75%{top:0%; left: 0%;}
+    100% {top:-30%; left: -10%;}
+}
+
+.intro{
+    color: #fff;
+    display: inline-block;
+    clear: both;
+}
+
+#canvasButterflies {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.header{
+    font-family: 'Rock 3d', cursive;
+    width: 80%;
+    font-size: 110%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.header span{
+    font-size: 300%;
+}
+
+.header:hover{
+    color: #6a9552;
+}
+
+
+
+
+

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Monoton&family=Rock+3D&family=Yellowtail&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}      
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    position: absolute;
+    color: #000;
+    z-index: 105;
+    font-size: 24vh;
+    margin : 20vh;
+    text-align: center;
+    -webkit-animation: name 2s ease-in-out infinite alternate;
+    -moz-animation: name 2s ease-in-out infinite alternate;
+    animation: name 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes name {
+from {}
+to {text-shadow: 0 0 10px #99cccc, 0 0 15px #9ccccc, 0 0 20px #99cccc; }
+}
+
+.loader.hidden {
+animation: fadeOut 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+#cnv {
+    background-color: rgb(71, 68, 68);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+}  
+
+.navbar{
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    font-family: 'Abel', sans-serif;
+    background-color: #6a9552;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    -webkit-animation: logo 2s ease-in-out infinite alternate;
+}
+
+#navbar__logo:hover {
+    background-color: #6a9552;
+}
+
+@-webkit-keyframes logo {
+    from {}
+    to {text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; }
+    } 
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover{
+    color: #6a9552;
+}
+
+.photo {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-height: 50px;
+
+}
+
+.welcome {
+    font-family: 'abel', sans-serif;
+    font-size: 150px;
+    top: 30%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: absolute;
+    color: #000;
+    z-index: 100;
+    font-size: 24vh;
+    margin : 20vh;
+    text-align: center;
+    -webkit-animation: welcomeMsg 2s ease-in-out infinite alternate;
+    -moz-animation: welcomeMsg 2s ease-in-out infinite alternate;
+    animation: welcomeMsg 2s ease-in-out infinite alternate;
+}
+
+.fade {
+    z-index: 5;
+    animation: fadeIn 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+            opacity: 100;
+            visibility: visible;
+        }
+    }
+
+@-webkit-keyframes welcomeMsg {
+    from {text-shadow: 0 0 10px #f2f4f4, 0 0 15px #dceaea, 0 0 20px #deeaea;}
+    to {text-shadow: 0 0 10px #6a9552, 0 0 15px #9ccccc, 0 0 20px #6a9552; }
+    }
+
+#canvas1 {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+
