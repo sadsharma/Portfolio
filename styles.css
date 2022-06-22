@@ -198,4 +198,31 @@ animation-fill-mode: forwards;
     z-index: 0;
 }
 
+.fade {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+}
+
+.hello {
+    position: relative;
+    color: #6a9552;
+    top: 88%;
+    left: 20%;
+    z-index: 0;
+    font-size: 300%;
+    font: 'abel';
+}
+
+.more {
+    position: relative;
+    color: #6a9552;
+    top: 120%;
+    left: 30%;
+    z-index: 0;
+    font-size: 300%;
+    font: 'abel';
+}
+
+
 
