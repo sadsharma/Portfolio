@@ -101,7 +101,7 @@ body {
 
 form {
     position: absolute;
-    top: 17%;
+    top: 12%;
     left: 5%;
     background: rgb(136,184,136);
     background: radial-gradient(circle, rgba(136,184,136,0.9346113445378151) 21%, rgba(106,149,82,0.592874649859944) 50%, rgba(25,32,22,0) 67%);
@@ -124,19 +124,19 @@ form:hover {
         top: 15%;
     }
     20%{
-        top: 19%;
+        top: 10%;
     }
     40% {
         top: 15%;
     }
     60% {
-        top: 17%;
+        top: 11%;
     }
     80% {
         top: 15%;
     }
     100%{
-        top: 17%;
+        top: 12%;
     }
 }
 

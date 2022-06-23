@@ -15,7 +15,7 @@ class Root {
         this.y = y;
         this.speedX = Math.random() * 4 - 2;
         this.speedY = Math.random() * 4 - 2;
-        this.maxSize = Math.random() * 5 + 3;
+        this.maxSize = Math.random() * 5 + 2;
         this.size = Math.random() * 1 + 2;
         this.vs = Math.random() * 0.2 + 0.05;
         this.angle = Math.random() * 6.2;
@@ -73,7 +73,7 @@ class Flower{
         this.frameSize = 80;
         this.frameX = Math.floor(Math.random() * 3);
         this.frameY = Math.floor(Math.random() * 3);
-        this.size > 7.2 ? this.willFlower = true : this.willFlower = false;
+        this.size > 6.7 ? this.willFlower = true : this.willFlower = false;
         this.angle = 0; 
         this.va = Math.random() * 0.05 - 0.025;
     }
@@ -104,8 +104,12 @@ function resizeReset() {
 
 window.addEventListener('mousemove', function(e)
 {
+    
+    for(let i = 0; i < 2; i++)
+    {
         const root = new Root(e.x, e.y);
         root.update();
+    }
         
 });
 
