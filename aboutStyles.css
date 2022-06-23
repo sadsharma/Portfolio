@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 98;
 
@@ -236,7 +236,7 @@ body {
 }
 
 #canvasButterflies {
-    position: absolute;
+    position: relataive;
     width: 100%;
     height: 100vh;
     top: 0%;
@@ -304,31 +304,6 @@ body {
     color: #6a9552;
 }
 
-.intro {
-    left: 5%;
-    top: 115%;
-    position: absolute;
-    width: 45%;
-    height: 30%;
-}
-
-.facePic {
-    position: absolute;
-    left: 50%;
-    top: 103%;
-    width: 500px;
-    height: 300px;
-    transform: scale(.7);
-    z-index: 10;
-}
-
-.face{
-    border-radius: 500px;
-}
-
-.facePic:hover{
-    animation: animatePic 2s alternate;
-}
 @keyframes animatePic {
     25%{
         transform: scale(0.68, .76);
@@ -352,4 +327,45 @@ body {
     
 }
 
+.description {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #6a9552;
+}
+
+.description h2 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #6a9552;
+    top: 15%;
+    left: 15%;
+}
+.intro{
+    position: relative;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face{
+    border-radius: 400px;
+    transform: scale(.7);
+}
+
+.face:hover{
+    animation: animatePic 2s alternate;
+}
 
