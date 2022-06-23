@@ -5,6 +5,9 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+const finalWidth =  canvas.width
+
+
 class Root {
     constructor(x,y)
     {
@@ -91,9 +94,19 @@ class Flower{
     }
 }
 
+function resizeReset() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+
+    location.reload();
+}
+
+
 window.addEventListener('mousemove', function(e)
 {
         const root = new Root(e.x, e.y);
         root.update();
         
 });
+
+window.addEventListener("resize", resizeReset);

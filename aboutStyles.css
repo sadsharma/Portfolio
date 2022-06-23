@@ -9,59 +9,13 @@
 body {
     align-items: center;
     justify-content: center;
-    background-color: #000000;
     overflow-x: hidden;
+    background-color: black;
 }
 
-.loader {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+    overflow: hidden;
 }
-
-.name{
-    display: flex;
-    position: absolute;
-    color: #000;
-    z-index: 105;
-    font-size: 24vh;
-    margin : 20vh;
-    text-align: center;
-    -webkit-animation: name 2s ease-in-out infinite alternate;
-    -moz-animation: name 2s ease-in-out infinite alternate;
-    animation: name 2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes name {
-from {}
-to {text-shadow: 0 0 10px #6a9552, 0 0 15px #9ccccc, 0 0 20px #6a9552; }
-}
-
-.loader.hidden {
-animation: fadeOut 5s;
-animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    100%{
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
-
-#cnv {
-    background-color: rgb(71, 68, 68);
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-}  
 
 .navbar{
     height: 80px;
@@ -112,9 +66,6 @@ animation-fill-mode: forwards;
     to {text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; }
     } 
 
-.fa-gem{
-    margin-right: 0.5rem;
-}
 
 .navbar__menu{
     display: flex;
@@ -266,12 +217,12 @@ animation-fill-mode: forwards;
     0%{top: 70%; left:-30%;}
     30% {top:20%; left:40%;}
     60%{top: 50%; left: 80%;}
-    75%{top:0%; left: 90%;}
-    100% {top:-30%; left: 97;}
+    75%{top:0%; left: 80%;}
+    100% {top:-30%; left: 80;}
 }
 
 @keyframes butterfly7Animation {
-    0%{top: 70%; left:90%;}
+    0%{top: 70%; left:80%;}
     30% {top:20%; left: 60%;}
     60%{top: 50%; left: 30%;}
     75%{top:0%; left: 0%;}
@@ -285,9 +236,12 @@ animation-fill-mode: forwards;
 }
 
 #canvasButterflies {
+    position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    top: 0%;
     overflow: hidden;
+    
 }
 
 .header{
@@ -350,7 +304,52 @@ animation-fill-mode: forwards;
     color: #6a9552;
 }
 
+.intro {
+    left: 5%;
+    top: 115%;
+    position: absolute;
+    width: 45%;
+    height: 30%;
+}
 
+.facePic {
+    position: absolute;
+    left: 50%;
+    top: 103%;
+    width: 500px;
+    height: 300px;
+    transform: scale(.7);
+    z-index: 10;
+}
 
+.face{
+    border-radius: 500px;
+}
+
+.facePic:hover{
+    animation: animatePic 2s alternate;
+}
+@keyframes animatePic {
+    25%{
+        transform: scale(0.68, .76);
+    }
+    50%{
+        transform: scale(.77,.67);
+    }
+    75%{
+        transform: scale(.67,.8);
+    }
+}
+
+.border {
+    top: 100%;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    border-color: #6a9552;
+    border-style: solid;
+    z-index: 10;
+    
+}
 
 
