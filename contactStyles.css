@@ -101,7 +101,7 @@ body {
 
 form {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 5%;
     background: rgb(136,184,136);
     background: radial-gradient(circle, rgba(136,184,136,0.9346113445378151) 21%, rgba(106,149,82,0.592874649859944) 50%, rgba(25,32,22,0) 67%);
@@ -116,36 +116,10 @@ form {
 
 }
 
-form:hover {
-    animation: bounce 2s alternate;
-}
-
-@keyframes bounce {
-    0%{
-        top: 15%;
-    }
-    20%{
-        top: 10%;
-    }
-    40% {
-        top: 15%;
-    }
-    60% {
-        top: 11%;
-    }
-    80% {
-        top: 15%;
-    }
-    100%{
-        top: 12%;
-    }
-}
-
-
-form h3 {
+form h3, .linkedin {
     color: #a7d4a7;
     font-weight: 800;
-    margin: 20px;
+    margin:5px;
 }
 
 form input, form textarea{
