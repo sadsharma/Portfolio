@@ -114,3 +114,14 @@ window.addEventListener('mousemove', function(e)
 });
 
 window.addEventListener("resize", resizeReset);
+
+canvas.addEventListener("touchstart", function(e)
+{
+    
+    for(let i = 0; i < 2; i++)
+    {
+        const root = new Root(e.x, e.y);
+        root.update();
+    }
+        
+});
