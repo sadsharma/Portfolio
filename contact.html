@@ -58,6 +58,18 @@
 
         anim();
 
+        function resizeReset() {
+            w = canvas.width = window.innerWidth;
+            h = canvas.height = window.innerHeight;
+
+            dots = [];
+            for (let i = 0; i < 100; i++) {
+                dots.push(new Dot());
+            }
+        }
+
+
+    window.addEventListener("resize", resizeReset);
     </script>
     </div>
 
@@ -86,8 +98,9 @@
             </ul>
         </div>
     </nav>
+
     <div class="formContainer"></div>
-    <div class="container">
+    <div class="container" id="boxes">
         
         <form action="https://formspree.io/f/mdobjvlv" method="POST">
             
@@ -99,7 +112,6 @@
             <textarea message="message" name = "message" rows="4" placeholder="Thoughts..."></textarea>
             <button type="submit" value="send">Send</button>
         </form>
-
     </div>
     </div>
 
@@ -202,7 +214,10 @@
         <div class="explosion"></div>
     </div>
 
-    <div class="image">
+    <div class="boxes" id="wild">
+
+    </div>
+    <div class="boxes" id="image">
         <img src="images (potential)/THANK message.png" alt="" srcset="">
     </div>
 

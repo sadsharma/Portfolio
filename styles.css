@@ -212,7 +212,7 @@ animation-fill-mode: forwards;
     justify-content: center;
     align-items: center;
     color: #6a9552;
-    top: 83%;
+    top: 85%;
     left: -20%;
     z-index: 0;
     font-size: 300%;
@@ -225,12 +225,36 @@ animation-fill-mode: forwards;
     justify-content: center;
     align-items: center;
     color: #6a9552;
-    top: 120%;
+    top: 122%;
     left: 10%;
     z-index: 0;
     font-size: 300%;
     font: 'abel';
 }
 
-
+@media only screen and (max-width:700px) 
+{
+    body{
+        overflow: hidden;
+    }
+    .welcome {
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        left: 25%;
+        font-size: 70px;
+    }
+    .fade {
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        top: 10%;
+        left: 64%;
+    }
+    .more {
+        top: 110%;
+        left: -15%;
+    }
+}
 

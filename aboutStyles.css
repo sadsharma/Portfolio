@@ -369,3 +369,17 @@ body {
     animation: animatePic 2s alternate;
 }
 
+@media only screen and (max-width:700px) 
+{
+    body{
+        overflow-x: hidden;
+    }
+    .header {
+        font-size: 10px;
+        left: 43%;
+    }
+    .intro {
+        position: relative;
+        width: 500px;
+    }
+}

@@ -318,7 +318,7 @@ form button {
 #firework7 .explosion::before {
 	animation: explosion 2.4s ease-in-out infinite;
 }
-.image {
+#image {
     position: absolute;
     top: 27%;
     left: 55%;
@@ -337,4 +337,11 @@ form button {
     font-weight: bold;
 }
 
-        
+#wild {
+    position: absolute;
+    width : 700px;
+    height: 100px;
+    top: 40%;
+    left: 5%;
+}
+
