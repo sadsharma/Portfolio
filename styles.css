@@ -193,7 +193,7 @@ body {
     font-size: 50px;
     font: 'abel';
     top: 10%;
-    left: -40%;
+    left: -35%;
 }
 
 .more {
@@ -206,7 +206,7 @@ body {
     font-size: 50px;
     font: 'abel';
     top: 60%;
-    left: 10%;
+    left: 15%;
 }
 
 @media only screen and (max-width:700px) 
