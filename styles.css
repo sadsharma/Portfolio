@@ -3,9 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}      
-
+    text-align: center;
+} 
 body {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,8 +193,7 @@ body {
     z-index: 0;
     font-size: 50px;
     font: 'abel';
-    top: 10%;
-    left: -35%;
+    top: 14%;
 }
 
 .more {
@@ -206,7 +206,6 @@ body {
     font-size: 50px;
     font: 'abel';
     top: 60%;
-    left: 15%;
 }
 
 @media only screen and (max-width:700px) 
