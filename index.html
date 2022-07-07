@@ -1,50 +1,617 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Sadikshya</title>
-    <link rel="stylesheet" href="styles.css">   
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
 
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/Portfolio/index.html" id="navbar__logo">SADIKSHYA</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-            
-                <li class="navbar__item">
-                    <a href="/Portfolio/index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/Portfolio/about.html" class="navbar__links">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/Portfolio/resume.html" class="navbar__links">Resume</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/Portfolio/contact.html" class="navbar__links">Contact</a>
-                </li>
-            </ul>
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <a href="/index.html" id="header-logo">SADIKSHYA</a>
+            </a>
         </div>
-    </nav>
 
-    <div class="welcome">
-        SADIKSHYA
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">Passion</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+        <canvas id = "canvas1"></canvas>
+        <script src="./js/homepageArt.js"></script>
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hello, I'm Sadikshya Sharma</h3>
+                <h1>
+                    Software Engineer <br>
+                    Web Developer 
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid">
+            </div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                    Hello! I'm Sadikshya Sharma or as everyone calls me, Sadie. 
+                    I am a 19 year old aspiring software engineer and web developer.
+                    </p>
+
+                    <p>
+                    Let's begin with a basic background of me! What we know so far: My name is Sadie and I'm 19. 
+                    I am currently a sophmore in Stony Brook University. However, I plan to graduate in may 2024.
+                    My major is computer science and I truly love programming (but more on that later). 
+                    I am originally from Nepal and moved to the United States when I was 10 years old. 
+                    I absolutely love nepali food. And lastly, I'm going to point out the obvious as if I haven't shown it enough in this website, my favorite color is green.
+                    </p>
+
+                    <p>
+                    Now that you basically know everything about me, onto the good stuff. Why do I love coding so much? The answer is "because you can do so much with so little". Take this website for example, this was my first project with HTMl, CSS or Javascript. I decided I wanted to make a personal website. Sat down with my laptop. Did alot of research and started typing away. All I needed was a laptop and I learned how to write code in three different languages and create art with javascript to make my website truly unique. Isn't that amazing?
+                    </p>
+
+                    <p>
+                    As for my qualifications, click below to download my resume. I am very skilled at java and thoroughly enjoy coding in java. However, I am a fast learner (learned HTML CSS and Javascript to create this website in less than a month and a half) and would love to take on any language. I also have dabbled in game development using Unity and very much enjoyed that as well. 
+                    </p>
+                    <p>
+                    I'm going to stop myself here but if you would like to know more please reach out to me so we can talk! :)
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/sadikshya-sharma-933b8522b" class="btn btn--stroke full-width" >Hire Me</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="Sadikshya_Sharma_Resume.pdf" class="btn btn--primary full-width" download>Download Resume</a>
+                </div>
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">June 2022 - August 2022</p>
+                                <h3 class="item-title">The OCC - Department of Treasury</h3>
+                                <h5>Information Technology</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Preformed data analysis and colaborated with the IT department to imlement a more secure way of accessing the OCC network. Came up with solutions to help resolve cybersecurity issues. Also, shadowed the manager of the department in order to get a deeper understanding of the leadership roles in the tech industry.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">February 2022 - June 2022</p>
+                                <h3 class="item-title">Juni Learning</h3>
+                                <h5>Java Instructor</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2011 - June 2015</p>
+                                <h3 class="item-title">University of Life</h3>
+                                <h5>Master Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">July 2009 - June 2011</p>
+                                <h3 class="item-title">State Design University</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- passion
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay">
+            <canvas id="canvas2"></canvas>
+        </div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Passion</h2>
+
+                <p class="section-desc">
+                    Creating works that leave people in awe.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Brand Identity</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Illustration</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
+                <p class="section-desc">
+                    Here are some of my selected works I have done lately. Feel free to 
+                    check them out.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-city-building.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="images/portfolio/city-building.jpg" 
+                                     srcset="images/portfolio/city-building.jpg 1x, images/portfolio/city-building@2x.jpg 2x" alt="">
+                            </a>    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                City Building
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Woodcraft
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/portfolio/the-beetle.jpg"
+                                     srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                The Beetle
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Development
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Shutterbug
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" 
+                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Lamp
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg"
+                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Fuji
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+        </div>
+        <div class="firework" id="firework1">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework2">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework3">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework4">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework5">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework6">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+        <div class="firework" id="firework7">
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+            <div class="explosion"></div>
+        </div>
+    <div class="container" id="boxes">
+        
+        <form action="https://formspree.io/f/mdobjvlv" method="POST">
+            
+            <a href="https://www.linkedin.com/in/sadikshya-sharma-933b8522b/" class="linkedin">LINKEDIN</a>
+            <input name = "name" id="name" placeholder="Your Name" required>
+            <input name="_replyTo" name = "email" id="email" placeholder="Your Email" required>
+            <input name = "company" id="company" placeholder="Company"required>
+            <textarea name="textarea-name" rows="5" placeholder="Thoughts..."></textarea>
+            <button type="submit" value="send">Send</button>
+        </form>
     </div>
 
-    <div class="fade">
-        <div class="hello">Hello, I'm</div>
-        <div class="more">and I am an aspiring software engineer</div>
-    </div>
+    <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
 
-    <canvas id = "canvas1"></canvas>
-    <script src="./homepageArt.js"></script>
+            
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>End of Page</span> 
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" id="reload" href="#top" onClick="window.location.reload(true)"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/butterflyArt.js"></script>
+
 </body>
-</html>
