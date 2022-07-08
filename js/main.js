@@ -1,10 +1,3 @@
-document.addEventListener('touchstart', function(e) {
-    console.log('touchstart');
-
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    e.stopPropagation();
-});
 
 (function($) {
 
@@ -83,11 +76,6 @@ document.addEventListener('touchstart', function(e) {
         });
 
         if (toggleButton.is(':visible')) nav.addClass('mobile');
-
-        $WIN.on('resize', function() {
-            if (toggleButton.is(':visible')) nav.addClass('mobile');
-            else nav.removeClass('mobile');
-        });
 
         nav.find('a').on("click", function() {
 
