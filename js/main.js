@@ -77,6 +77,11 @@
 
         if (toggleButton.is(':visible')) nav.addClass('mobile');
 
+        $WIN.on('resize', function() {
+            if (toggleButton.is(':visible')) nav.addClass('mobile');
+            else nav.removeClass('mobile');
+        });
+
         nav.find('a').on("click", function() {
 
             if (nav.hasClass('mobile')) {

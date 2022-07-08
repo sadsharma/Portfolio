@@ -112,6 +112,5 @@ let canvas1, ctx1, w, h, dots;
         }
 
         window.addEventListener("DOMContentLoaded", init);
-        window.addEventListener("resize", resizeReset);
         window.addEventListener("mousemove", mousemove);
         window.addEventListener("mouseout", mouseout);

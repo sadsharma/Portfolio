@@ -113,7 +113,6 @@ window.addEventListener('mousemove', function(e)
         
 });
 
-window.addEventListener("resize", resizeReset);
 
 canvas.addEventListener("touchstart", function(e)
 {
