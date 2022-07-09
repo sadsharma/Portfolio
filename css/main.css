@@ -2599,14 +2599,14 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-works {
   padding-top: 10.2rem;
-  padding-bottom: 16rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
 }
 
 .masonry-wrap {
   width: 89%;
   max-width: 1400px;
-  margin-top: 11.2rem;
+  margin-top: 5.2rem;
   margin-right: auto;
   margin-left: auto;
 }
