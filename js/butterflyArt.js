@@ -16,7 +16,7 @@ let canvas1, ctx1, w, h, dots;
             h = canvas1.height = window.innerHeight;
 
             dots = [];
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 350; i++) {
                 dots.push(new Dot());
             }
         }

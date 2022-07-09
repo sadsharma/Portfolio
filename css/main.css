@@ -2375,8 +2375,8 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 19.2rem;
-  padding-bottom: 16rem;
+  padding-top: 10.2rem;
+  padding-bottom: 12rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2598,7 +2598,7 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-  padding-top: 19.2rem;
+  padding-top: 10.2rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
 }
