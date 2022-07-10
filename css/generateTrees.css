@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Karla:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+canvas{
+    position: absolute;
+    background: black;
+    overflow: hidden;
+}
+
+.generate-tree-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #6a9552;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 300px;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    color: brown;
+    padding: 0px;
+    font-size: xx-large;
+    left: 3%;
+    top: 5%;
+    z-index: 11;
+
+}
