@@ -1,5 +1,6 @@
 const canvas = document.querySelector('canvas');
 const generateButton = document.querySelector('.generate-tree-button');
+const backHome = document.querySelector('.webpage');
 const header = document.querySelector('h1');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -84,6 +85,7 @@ if(canvas.width < 1000)
 drawTree(canvas.width/2, canvas.height - 80 ,canvas.height/num, 0, 20, '#317773', '#E2D1F9');
 generateButton.style.background =  '#317773';
 header.style.color = '#317773';
+backHome.style.color = '#E2D1F9';
 
 function generateRandomTree () {
     ctx.clearRect(0,0,canvas.width, canvas.height);
@@ -97,6 +99,7 @@ function generateRandomTree () {
     drawTree(centerPointX, canvas.height - 80, canvas.height/num,angle, branchWidth, color1, color2);
     generateButton.style.background =  color1;
     header.style.color = color1;
+    backHome.style.color = color2;
 }
 
 generateButton.addEventListener('click', generateRandomTree);
