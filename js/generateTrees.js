@@ -76,7 +76,12 @@ function drawTree(startX, startY, len, angle, branchWidth, color1, color2) {
     ctx.restore();
 }
 
-drawTree(canvas.width/2, canvas.height - 80 ,canvas.height/6, 0, 20, '#317773', '#E2D1F9');
+var num = 6;
+if(canvas.width < 1000)
+{
+    num = 9;
+}
+drawTree(canvas.width/2, canvas.height - 80 ,canvas.height/num, 0, 20, '#317773', '#E2D1F9');
 generateButton.style.background =  '#317773';
 header.style.color = '#317773';
 
@@ -89,7 +94,7 @@ function generateRandomTree () {
     let color1 = 'rgb(' + Math.random() * 200 + "," + Math.random() * 150 + "," + Math.random() * 180 + ')';
     let color2 = 'rgb(' + (Math.random() * 200 ) + 40 + "," + (Math.random() * 200 ) + 40 + "," + (Math.random() * 200 ) + 40 + ')';
     curve = (Math.random() * 80) + 10;
-    drawTree(centerPointX, canvas.height - 80, canvas.height /6,angle, branchWidth, color1, color2);
+    drawTree(centerPointX, canvas.height - 80, canvas.height/num,angle, branchWidth, color1, color2);
     generateButton.style.background =  color1;
     header.style.color = color1;
 }
