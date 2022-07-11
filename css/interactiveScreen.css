@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Karla:wght@200&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    color: white;
+    font-size: medium;
+}
+canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;   
+    background: rgb(170,212,172);
+    background: radial-gradient(circle, rgba(170,212,172,1) 0%, rgba(135,187,169,1) 29%, rgba(84,108,80,1) 73%, rgba(80,125,46,1) 100%);
+}
+
+
+.youtube-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}

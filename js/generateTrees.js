@@ -52,16 +52,17 @@ function drawTree(startX, startY, len, angle, branchWidth, color1, color2) {
     //ctx.lineTo(0, -len);
     if(angle > 0)
     {
-        ctx.bezierCurveTo(10, -len/2, 50, -len/2, 0, -len);
+        ctx.bezierCurveTo(5, -len/3, 30, -len/2, 0, -len);
     }
     else
     {
-        ctx.bezierCurveTo(10, -len/2, -30, -len/2, 0, -len);
+        ctx.bezierCurveTo(5, -len/3, -30, -len/2, 0, -len);
     }
     ctx.stroke();
 
     var leaves = (Math.random() * 15) + 5;
-    if (len < 10) {
+    if (len < leaves) {
+
         ctx.beginPath();
         ctx.arc( 0, -len, 12, 0, Math.PI/2);
         ctx.fill();
@@ -70,7 +71,7 @@ function drawTree(startX, startY, len, angle, branchWidth, color1, color2) {
         return;
     }
 
-    curve = (Math.random() * 10) + 10;
+    curve = (Math.random() * 13) + 10;
     branchWidthSpread = (Math.random() * .4) + .5;
     drawTree(0, -len + branchWidthSpread, len * 0.8, angle+ curve, branchWidth * branchWidthSpread);
     drawTree(0, -len + branchWidthSpread, len * 0.8, angle - curve , branchWidth * branchWidthSpread);
@@ -99,7 +100,6 @@ function generateRandomTree () {
     drawTree(centerPointX, canvas.height - 80, canvas.height/num,angle, branchWidth, color1, color2);
     generateButton.style.background =  color1;
     header.style.color = color1;
-    backHome.style.color = color2;
 }
 
 generateButton.addEventListener('click', generateRandomTree);
