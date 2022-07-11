@@ -35,14 +35,3 @@ canvas {
     left: 80%;
     top: 5%;
 }
-
-h1 {
-    position: absolute;
-    color: brown;
-    padding: 0px;
-    font-size: xx-large;
-    left: 3%;
-    top: 5%;
-    z-index: 11;
-
-}
