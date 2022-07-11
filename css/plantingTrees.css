@@ -1,30 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Karla:wght@200&display=swap');
 * {
-	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
+	margin: 0;
     font-family: 'Karla', sans-serif;
 }
-
-h1 {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: 10;
-    color: white;
-    font-size: medium;
-}
 canvas {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%;   
-    background: rgb(170,212,172);
-    background: radial-gradient(circle, rgba(170,212,172,1) 0%, rgba(135,187,169,1) 29%, rgba(84,108,80,1) 73%, rgba(80,125,46,1) 100%);
+	height: 100%;
+    background: rgb(133,214,209);
+    background: linear-gradient(0deg, rgba(133,214,209,1) 0%, rgba(214,223,223,1) 18%, rgba(189,226,225,1) 39%, rgba(166,198,198,1) 50%, rgba(124,170,172,1) 75%, rgba(135,182,185,1) 100%);
 }
 
 .webpage {
+    position: absolute;
     cursor: pointer;
     outline: none;
     border: none;
@@ -34,6 +25,8 @@ canvas {
     font-style: bold;
     left: 80%;
     top: 5%;
+    z-index: 10;
+    font-style: bold;
 }
 
 h1 {
