@@ -7,38 +7,6 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 let curve,randomThick;
 
-class Drop {
-    constructor()
-    {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.r = Math.random() * 3.5;
-        this.v = Math.random() * .5;
-    }
-
-    make()
-    {
-        ctx.fillStyle = 'rgba(' + (Math.random() * 200 ) + 40 + "," + (Math.random() * 200 ) + 40 + "," + (Math.random() * 200 ) + 40 + ', .2)';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.closePath();
-    }
-}
-
-let drops = [];
-for(let i = 0; i < 80; i++)
-{
-    drops.push(new Drop());
-}
-
-function anim()
-{
-    drops.forEach(drop => drop.make());
-    requestAnimationFrame(anim);
-}
-
-anim();
 
 function drawTree(startX, startY, len, angle, branchWidth, color1, color2) {
     ctx.beginPath();

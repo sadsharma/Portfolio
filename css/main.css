@@ -1,56 +1,4 @@
-/* =================================================================== 
- *
- *  Epitome Main Stylesheet
- *  Template Ver. 1.0.0
- *  04-22-2019
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *     ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms 
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## additional typo styles 
- *    ## skillbars
- *    ## alert box 
- *    ## pagination 
- *  # Common and Reusable Styles
- *  # header 
- *    ## header logo
- *    ## main navigation
- *    ## menu trigger
- *  # intro 
- *  # about
- *    ## timeline
- *  # services
- *  # CTA
- *  # works
- *  # testimonials
- *  # contact
- *  # footer
- *    ## copyright
- *    ## go to top
- *  # IE10/IE11 Specific
- *
- * =================================================================== */
 
-
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
 }
@@ -79,9 +27,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## links
- * ------------------------------------------------------------------- */
 a {
   color: #6a9552;
   transition: all 0.3s ease-in-out;
@@ -99,11 +44,6 @@ a:active {
 }
 
 
-
-/* ===================================================================
- * # typography & general theme styles
- * 
- * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 500;
@@ -339,9 +279,6 @@ hr {
   height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Lists
- * ------------------------------------------------------------------- */
 ol {
   list-style: decimal;
 }
@@ -399,41 +336,6 @@ dd {
   margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## responsive video container
- * ------------------------------------------------------------------- */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe,
-.video-container object,
-.video-container embed,
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* ------------------------------------------------------------------- 
- * ## floated image
- * ------------------------------------------------------------------- */
-img.pull-right {
-  margin: 1.2rem 0 0 2.8rem;
-}
-
-img.pull-left {
-  margin: 1.2rem 2.8rem 0 0;
-}
-
-/* ------------------------------------------------------------------- 
- * ## tables
- * ------------------------------------------------------------------- */
 table {
   border-width: 0;
   width: 100%;
@@ -470,9 +372,6 @@ td:last-child {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Spacing 
- * ------------------------------------------------------------------- */
 button,
 .btn {
   margin-bottom: 1.6rem;
@@ -499,9 +398,6 @@ form,
   margin-bottom: 3.2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## pace.js styles - minimal
- * ------------------------------------------------------------------- */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -528,12 +424,6 @@ form,
   display: none;
 }
 
-
-
-/* =================================================================== 
- * # preloader
- *
- * ------------------------------------------------------------------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -603,9 +493,6 @@ form,
 }
 
 
-/* ------------------------------------------------------------------- 
- * ## Style Placeholder Text
- * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
 
   /* WebKit, Blink, Edge */
@@ -648,9 +535,6 @@ form,
   color: #8c8c8c !important;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Change Autocomplete styles in Chrome
- * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus
@@ -665,12 +549,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-
-/* ===================================================================
- * # buttons
- *
- * ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -714,8 +592,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* button primary
- * ------------------------------------------------- */
+
 .btn.btn--primary,
 button.btn--primary,
 input[type="submit"].btn--primary,
@@ -740,8 +617,6 @@ input[type="button"].btn--primary:focus {
   border-color: #6a9552;
 }
 
-/* button modifiers
- * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
   width: 100%;
@@ -787,19 +662,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-
-
-/* =================================================================== 
- * # additional components
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## additional typo styles 
- * ------------------------------------------------------------------- */
-
-/* drop cap 
- * ----------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
   margin: 0;
@@ -813,8 +675,6 @@ input::-moz-focus-inner {
   color: #000000;
 }
 
-/* line definition style 
- * ----------------------------------------------- */
 .lining dt,
 .lining dd {
   display: inline;
@@ -840,8 +700,6 @@ input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
- * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -861,18 +719,6 @@ input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *    <blockquote>
- *      <p></p>
- *    </blockquote>
- *  </aside>
- *
- * --------------------------------------------------------------------- */
 .pull-quote {
   position: relative;
   padding: 2.4rem 3.2rem 2.4rem 0px;
@@ -919,18 +765,6 @@ input::-moz-focus-inner {
   content: none;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *    <li><a href="#">[value]<em>[name]</em></a></li>
- *  </ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
 .stats-tabs {
   padding: 0;
   margin: 3.2rem 0;
@@ -972,9 +806,6 @@ input::-moz-focus-inner {
   color: #7e7e7e;
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars
- * ------------------------------------------------------------------- */
 .skill-bars {
   list-style: none;
   margin: 6.8rem 0 3.2rem;
@@ -1114,9 +945,6 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## alert box 
- * ------------------------------------------------------------------- */
 .alert-box {
   padding: 2.4rem 4rem 2.4rem 3.2rem;
   position: relative;
@@ -1199,9 +1027,6 @@ input::-moz-focus-inner {
   background-color: #827217;
 }
 
-/* -------------------------------------------------------------------
- * ## pagination 
- * ------------------------------------------------------------------- */
 .pgn {
   margin: 3.2rem auto;
   text-align: center;
@@ -1301,10 +1126,6 @@ input::-moz-focus-inner {
   background-color: transparent;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * pagination
- * ------------------------------------------------------------------- */
 @media screen and (max-width:600px) {
   .pgn ul {
     padding: 0 5.2rem;
@@ -1313,11 +1134,6 @@ input::-moz-focus-inner {
 }
 
 
-
-/* ===================================================================
- * # Common and Reusable Styles
- *
- * ------------------------------------------------------------------- */
 .wide {
   max-width: 1400px;
 }
@@ -1395,10 +1211,6 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * common and reusable styles
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
   .item-title {
     font-size: 3rem;
@@ -1461,11 +1273,6 @@ input::-moz-focus-inner {
 }
 
 
-
-/* ===================================================================
- * # header 
- *
- * ------------------------------------------------------------------- */
 .s-header {
   position: absolute;
   top: 2rem;
@@ -1483,9 +1290,6 @@ input::-moz-focus-inner {
   left: 0;
 }
 
-/* -------------------------------------------------------------------
- * ## header logo
- * ------------------------------------------------------------------- */
 .header-logo {
   display: inline-block;
   margin: 6px 0 0 0;
@@ -1512,9 +1316,6 @@ input::-moz-focus-inner {
   to {text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; }
   } 
   
-/* -------------------------------------------------------------------
- * ## main navigation
- * ------------------------------------------------------------------- */
 .header-nav-wrap {
   display: inline-block;
 }
@@ -1586,9 +1387,6 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
- * ## menu trigger
- * ------------------------------------------------------------------- */
 .header-menu-toggle {
   display: none;
   height: 42px;
@@ -1668,10 +1466,6 @@ input::-moz-focus-inner {
   transform: rotate(225deg);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * header
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
   .header-main-nav {
     font-size: 12px;
@@ -1766,9 +1560,6 @@ input::-moz-focus-inner {
 
 }
 
-/* -------------------------------------------------------------------
- * make sure the menu is visible on larger screens
- * ------------------------------------------------------------------- */
 @media only screen and (min-width:801px) {
   .header-nav-wrap {
     display: block !important;
@@ -1776,12 +1567,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # intro 
- *
- * ------------------------------------------------------------------- */
 .s-intro {
   width: 100%;
   height: 100vh;
@@ -1882,10 +1667,6 @@ input::-moz-focus-inner {
   background-color: #6a9552;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * intro
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1400px) {
   .intro-text h3 {
     font-size: 2.2rem;
@@ -2030,12 +1811,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 10.2rem;
   padding-bottom: 10.8rem;
@@ -2073,9 +1848,6 @@ input::-moz-focus-inner {
   padding-left: 32px;
 }
 
-/* -------------------------------------------------------------------
- * ## timeline
- * ------------------------------------------------------------------- */
 .about-experience__timeline {
   margin-top: 0rem;
 }
@@ -2201,10 +1973,6 @@ input::-moz-focus-inner {
   margin-top: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
   .s-about {
     padding-top: 10.2rem;
@@ -2215,7 +1983,7 @@ input::-moz-focus-inner {
     padding-right: 30px;
   }
 
-  .about-experience__timeline .column::last-child {
+  .about-experience__timeline .column:last-child {
     padding-left: 30px;
   }
 
@@ -2368,12 +2136,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # services
- *
- * ------------------------------------------------------------------- */
 .s-services {
   padding-top: 10.2rem;
   padding-bottom: 12rem;
@@ -2448,10 +2210,6 @@ input::-moz-focus-inner {
   color: #6a9552;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * services
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1400px) {
   .services-list .item-service {
     padding: 0 20px;
@@ -2514,12 +2272,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # CTA
- *
- * ------------------------------------------------------------------- */
 .s-cta {
   padding-top: 13.5rem;
   padding-bottom: 13.6rem;
@@ -2562,10 +2314,6 @@ input::-moz-focus-inner {
   color: #000000;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * cta
- * ------------------------------------------------------------------- */
 @media screen and (max-width:800px) {
   .s-cta {
     font-size: 2.2rem;
@@ -2591,12 +2339,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # works
- *
- * ------------------------------------------------------------------- */
 .s-works {
   padding-top: 10.2rem;
   padding-bottom: 10rem;
@@ -2629,8 +2371,6 @@ input::-moz-focus-inner {
   transition: all 0.5s ease-in-out;
 }
 
-/* item-folio thumb
- * -------------------------------------- */
 .item-folio__thumb {
   position: relative;
   overflow: hidden;
@@ -2698,16 +2438,12 @@ input::-moz-focus-inner {
   right: 0;
 }
 
-/* item-folio thumb on hover 
- * ----------------------------------------------- */
 .item-folio__thumb:hover .item-folio__project-link {
   -webkit-transform: translate3d(0, 0, 0);
   background-image: url(../icons/icon-link.svg);
   transform: translate3d(0, 0, 0);
 }
 
-/* item-folio text
- * ------------------------------------------------ */
 .item-folio__text {
   margin-top: 8.92%;
 }
@@ -2746,10 +2482,6 @@ input::-moz-focus-inner {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * works
- * ------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
   .masonry__brick {
     padding: 0 24px;
@@ -2885,11 +2617,6 @@ input::-moz-focus-inner {
 
 }
 
-
-/* ===================================================================
- * # contact
- *
- * ------------------------------------------------------------------- */
 .s-contact {
   padding-top: 10.4rem;
   padding-bottom: 6.4rem;
@@ -2897,12 +2624,6 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
-
-
-/* ------------------------------------------------------------------- 
-* responsive:
-* contact
-* ------------------------------------------------------------------- */
 @media screen and (max-width:1300px) {
   .contact-email {
     font-size: 10rem;
@@ -3158,18 +2879,12 @@ form button {
 }
 
 
-
-/* ===================================================================
- * # footer
- *
- * ------------------------------------------------------------------- */
 footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2;
-  padding-top: 0;
-  padding-bottom: 6.4rem;
+  padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
   color: rgb(255, 255, 255);
   position: relative;
@@ -3180,12 +2895,10 @@ footer a:visited {
   color: #ffffff;
 }
 
-/* ------------------------------------------------------------------- 
- * ## copyright
- * ------------------------------------------------------------------- */
 .ss-copyright {
   margin-top: 2rem;
   padding-right: 80px;
+  z-index: 12;
 }
 
 .ss-copyright span {
@@ -3204,9 +2917,6 @@ footer a:visited {
   display: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## go to top
- * ------------------------------------------------------------------- */
 .ss-go-top {
   position: absolute;
   top: -1px;
@@ -3273,10 +2983,10 @@ footer a:visited {
   top: -165px;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
+#footerCanvas {
+  position: absolute;
+  width: 100%;
+}
 @media screen and (max-width:1200px) {
   .ss-go-top {
     right: 3rem;
@@ -3325,17 +3035,9 @@ footer a:visited {
 
 }
 
-
-
-/* ===================================================================
- * # IE10/IE11 Specific
- *
- * ------------------------------------------------------------------- */
 html[data-useragent*='MSIE 10.0'] .ss-go-top::before,
 html[data-useragent*='MSIE 10.0'] .ss-go-top::after,
 html[data-useragent*='rv:11.0'] .ss-go-top::before,
 html[data-useragent*='rv:11.0'] .ss-go-top::after {
   display: none;
 }
-
-/*# sourceMappingURL=main.css.map */
