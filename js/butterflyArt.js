@@ -16,7 +16,7 @@ let canvas1, ctx1, w, h, dots;
             h = canvas1.height = window.innerHeight;
 
             dots = [];
-            for (let i = 0; i < 350; i++) {
+            for (let i = 0; i < 400; i++) {
                 dots.push(new Dot());
             }
         }
@@ -79,7 +79,7 @@ let canvas1, ctx1, w, h, dots;
                     this.centerX = getRandomInt(0, w);
                 }
 
-                this.size = getRandomInt(2, 4);
+                this.size = getRandomInt(1, 2);
 
                 if (this.constructed) {
                     this.rgba = [106, 149, 82, 1];
