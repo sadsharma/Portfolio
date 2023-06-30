@@ -3041,3 +3041,7 @@ html[data-useragent*='rv:11.0'] .ss-go-top::before,
 html[data-useragent*='rv:11.0'] .ss-go-top::after {
   display: none;
 }
+
+::-webkit-scrollbar{
+  width: 100%;
+}
