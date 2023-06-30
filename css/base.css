@@ -1262,3 +1262,7 @@ textarea {
 }
 
 /*# sourceMappingURL=base.css.map */
+
+.form-box{
+	border-color: aliceblue;
+}
