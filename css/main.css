@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #93be9a;
+  color: #6a9552;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1164,17 +1164,6 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-.technical-writing {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 1.7rem;
-  line-height: 1.176;
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-  margin-top: 0;
-  position: relative;
-}
-
 .section-heading::before {
   content: "";
   display: block;
@@ -1201,7 +1190,7 @@ input::-moz-focus-inner {
 
 .section-desc {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 5rem;
+  font-size: 5.4rem;
   font-weight: 400;
   line-height: 1.259;
   letter-spacing: -0.05rem;
@@ -1632,11 +1621,11 @@ input::-moz-focus-inner {
 }
 
 .intro-text h3 {
-  font-family: "Lora", sans-serif;
-  font-size: 3.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.333;
-  color: #dce5f1;
+  color: #6a9552;
   margin-top: 0;
 }
 
@@ -1644,7 +1633,7 @@ input::-moz-focus-inner {
   font-size: 7.8rem;
   font-weight: 500;
   line-height: 1.179;
-  color: #93b483;
+  color: #ffffff;
   margin-top: 0;
 }
 
@@ -2336,14 +2325,6 @@ input::-moz-focus-inner {
 
 }
 
-.picture-container
-{
-  width: 35rem;
-  height:35rem;
-  position: relative;
-  margin-left: 4rem;
-}
-
 @media screen and (max-width:600px) {
   .s-cta {
     font-size: 2rem;
@@ -2359,7 +2340,8 @@ input::-moz-focus-inner {
 }
 
 .s-works {
-  padding-top: 4.2rem;
+  padding-top: 10.2rem;
+  padding-bottom: 10rem;
   background-color: #ffffff;
 }
 
@@ -2383,8 +2365,6 @@ input::-moz-focus-inner {
 }
 
 .item-folio {
-  width: 50rem;
-  height:  40rem;
   text-align: center;
   padding: 60px;
   background-color: #EFEFEF;
@@ -3061,5 +3041,3 @@ html[data-useragent*='rv:11.0'] .ss-go-top::before,
 html[data-useragent*='rv:11.0'] .ss-go-top::after {
   display: none;
 }
-
-
